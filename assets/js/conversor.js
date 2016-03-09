@@ -2,8 +2,18 @@
   "use strict";
 
   function Medida(valor,tipo) {
-    this.type = tipo;
-    this.value = valor;
+
+    if (!tipo) {
+      expresion = XRegExp('(?<num>      [-+]?[^\\.][0-9]+([\\.][0-9]+)?\\s*(?:e[+-]?[ ]*[0-9]+)?)\\s*   # numero       \n' +
+                          '(?<temp1>    [fkcFKC])\\s*                                                   # temperatura1','x'),
+      cadena = XRegExp.exec(valor, expresion);
+      this.value = cadena.num;
+      this.type = cadena.temp1;
+    }
+    else {
+      this.value = valor;
+      this.type = tipo;
+    }
     /* tipo es opcional. Debería admitir  new Medida("45.2 Km") */
     /* ademas de new Medida(45.2, "Km") */
 
