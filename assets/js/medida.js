@@ -35,8 +35,8 @@ Medida.convertir = function(valor) {
   var match = Medida.match(valor);
   if (match) {
     var numero = match.num,
-        tipo   = match.temp1,
-        destino = match.temp2;
+        tipo   = match.temp1.toLowerCase(),
+        destino = match.temp2.toLowerCase();
 
     try {
       console.log(measures[tipo]);

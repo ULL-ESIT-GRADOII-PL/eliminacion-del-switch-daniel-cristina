@@ -13,8 +13,8 @@
     Temperatura.call(this, valor, "c");
     //funcion Celsius to Kelvin
     this.toKelvin = function(){
-      console.log("hola" + (valor + 273.15));
-      var aux = 1 * (valor + 273.15) ;
+      var aux =  parseFloat(valor);
+      aux = aux + 273.15;
       console.log(aux);
       return aux;
     };
