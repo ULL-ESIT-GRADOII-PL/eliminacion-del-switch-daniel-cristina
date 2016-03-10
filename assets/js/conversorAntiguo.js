@@ -3,14 +3,14 @@
   function main() {
         var valor     = document.getElementById('convert').value,
             elemento  = document.getElementById('converted');
-        elemento.innerHTML = Medida.convertir(valor);
-        return false;
+         //elemento.innerHTML = Medida.convertir(valor);
+        //return false;
     }
     exports.main = main;
 
   function Medida(valor,tipo) {
     const expr = XRegExp('(?<num>      [-+]?[^\\.][0-9]+([\\.][0-9]+)?\\s*(?:e[+-]?[ ]*[0-9]+)?)\\s*   # numero       \n' +
-                        '(?<temp1>     [fkcFKC])\\s*                                                   # temperatura1','x');
+                         '(?<temp1>    [fkcFKC])\\s*                                                   # temperatura1','x');
 
     if (!tipo) {
       cadena = XRegExp.exec(valor, expr);
@@ -21,12 +21,14 @@
       this.value = valor;
       this.type = tipo;
     }
+
+
     /* tipo es opcional. Debería admitir  new Medida("45.2 Km") */
     /* ademas de new Medida(45.2, "Km") */
 
   }
 
-  Medida.prototype.convertir = function(valor){
+  exports.convertir = function(valor){
   //  var valor     = document.getElementById('convert').value,
   //      elemento  = document.getElementById('converted'),
         /* Extienda la RegeExp a la especificación. use una XRegExp */
@@ -84,7 +86,10 @@
     }
     else
       elemento.innerHTML = "Formato de entrada inválido";
-  }
+  };
+
+
+
   function Temperatura(valor,tipo) {
     Medida.call(this, valor, tipo);
     /* tipo es opcional. Debería admitir new Medida("45.2 F") */
@@ -144,5 +149,6 @@
   exports.Farenheit = Farenheit;
 
 
+//}
 
 })(this);
