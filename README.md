@@ -1,15 +1,13 @@
-# Práctica OOP en JS
+# Práctica Eliminacion Switch Smell
 
-Este repositorio aloja la práctica de conversión de tipos, realizada con html, css y javascript, usando POO y haciendo uso de la herencia en javascript.
+Este repositorio aloja la práctica de conversión de tipos, realizada con html, css y javascript, usando POO y haciendo uso de la herencia en javascript. 
+También se realiza la eliminación del Switch Smell.
 
 
 **Repositorio GitHuB**
 
-* [Repositorio](https://github.com/ULL-ESIT-GRADOII-PL/object-oriented-programming-in-js-danielcristina)
+* [Repositorio](https://github.com/ULL-ESIT-GRADOII-PL/eliminacion-del-switch-daniel-cristina)
 
-**Página de la práctica**
-
-* [Web](http://ull-esit-gradoii-pl.github.io/object-oriented-programming-in-js-danielcristina/)
 
 **Página de los autores**
 
