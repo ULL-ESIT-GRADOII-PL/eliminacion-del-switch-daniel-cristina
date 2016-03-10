@@ -17,4 +17,4 @@ También se realiza la eliminación del Switch Smell.
 
 **Enlace al aula virtual**
 
-* Descripción [práctica](https://campusvirtual.ull.es/1516/mod/page/view.php?id=177984)
+* Descripción [práctica](https://campusvirtual.ull.es/1516/mod/page/view.php?id=180150)
