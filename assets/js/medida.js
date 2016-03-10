@@ -34,7 +34,7 @@ Medida.convertir = function(valor) {
 
   var match = Medida.match(valor);
   if (match) {
-    var numero = match.num,
+    var numero = parseFloat(match.num),
         tipo   = match.temp1.toLowerCase(),
         destino = match.temp2.toLowerCase();
 

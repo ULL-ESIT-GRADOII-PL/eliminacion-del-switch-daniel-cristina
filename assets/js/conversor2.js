@@ -13,10 +13,9 @@
     Temperatura.call(this, valor, "c");
     //funcion Celsius to Kelvin
     this.toKelvin = function(){
-      var aux =  parseFloat(valor);
-      aux = aux + 273.15;
-      console.log(aux);
-      return aux;
+    //  var aux =  parseFloat(valor);
+    //  aux = aux + 273.15;
+      return (valor + 273.15);
     };
     //funcion Celsius to Farenheit
     this.toFarenheit = function(){
